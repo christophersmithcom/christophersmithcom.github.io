@@ -1,0 +1,321 @@
+/*ACTIVE PAGE*/
+.topNav ul li ul li a.activePage {
+    color: #FFE495;
+    cursor: default;
+}
+.topNav ul li a.activePage {
+    color: #FFE495;
+    cursor: default;
+}
+
+
+
+/*BOOKS PAGE* ===========================================
+================================*/
+/*
+img.hgBooks {
+    top: 88%;
+}
+img.signature {
+    margin-bottom: 100px;
+}
+*/
+.content {
+    text-align: center;
+}
+
+#wrapper h1.books {
+    margin-top: 50%;
+    margin-bottom: 10%;
+}
+.books1, .books2 {
+        background: linear-gradient(-90deg, #fff, #dedede, #fff);
+        padding: 5% 0 3% 5%;
+    }
+.books3, .books4 {
+        padding: 5% 0 3% 5%;
+}
+img.books_jungle {
+    width: 70%;
+}
+img.books_hungerGames {
+    width: 70%;
+    margin-right: 5%
+}
+img.books_gregor {
+    width: 70%;
+    margin-right: 2%;
+}
+img.books_charlie {
+    width: 70%;
+    margin-right: 4%;
+}
+/*
+BOOKS PAGE =======MID-SIZE SCREEN=========================
+========================*/
+@media screen and (min-width:650px){
+     
+    .content {
+        text-align: left;
+    }
+    header.books {
+        background-image: url(../images/books_header.jpg);
+        background-position: center 6px;
+    }
+    .books1, .books2, .books3, .books4 {
+        padding: 3% 0 3% 10%;
+    }
+    .books1 {
+        margin-top: 3%;
+    }
+ 
+    img.books_jungle {
+        width: 50%;
+    }
+    img.books_hungerGames {
+        width: 40%;
+        margin-right: 5%
+    }
+    img.books_gregor {
+        width: 45%;
+        margin-right: 2%;
+    }
+    img.books_charlie {
+        width: 50%;
+        margin-right: 4%;
+    }
+    
+    #wrapper h1.books {
+        font-size: 1.8em;
+        margin-top: 7%;
+    }
+    
+}
+    
+/*BOOKS PAGE LARGE SCREEN================
+=======================================*/
+@media screen and (min-width:816px) {
+    img.books_jungle {
+        width: 28%;
+    }
+    img.books_hungerGames {
+        width: 25%;
+        margin-right: 5%;
+    }
+    img.books_gregor {
+        width: 30%;
+        margin-right: 2%;
+    }
+    img.books_charlie {
+        width: 28%;
+        margin-right: 4%;
+    }
+      #wrapper h1.books {
+        font-size: 1.8em;
+        margin-bottom: 0%;
+    }
+    figcaption {
+        width: 65%;
+        float: right;
+    }
+    figcaption .button {
+        margin: 5% 0 0 80%;
+        
+    }
+    #wrapper figcaption h1 {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+
+
+
+/*HUNGER GAMES PAGE* =====================================
+================================*/
+
+img.vol1, img.vol2, img.vol3 {
+     display:none;
+}
+img.books_hgBooks {
+    width: 70%;
+    position: absolute;
+    left: 10%;
+    top: 90%;
+}
+ .vol1_small, .vol2_small, .vol3_small {
+    width: 40%;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 5% auto;
+    box-shadow: 5px 5px 5px grey;
+    }
+.vol1_small {
+    display: none;
+}
+.hg_vol1 {
+    margin-top: 50%
+}
+.hg_reviews {
+    background-image: url(../images/TextureBg.jpg);
+    margin-top: 10%;
+    padding: 5%;     
+}
+
+
+
+/* HANGER GAMES PAGE =======MID-SIZE SCREEN==============
+===========================================*/
+@media screen and (min-width:650px){
+    header.hungerGames {
+        background-image: url(../images/hunger_games_header.jpg);
+        background-position: center 0px;
+    }
+    .vol1_small, .vol2_small, .vol3_small {
+        display:none;
+    }
+    img.books_hgBooks {
+        width: 45%;
+        left: 8%;
+        top: 55%;
+    }
+    section.hg_vol1, section.hg_vol2, section.hg_vol3 {
+        margin-top: 10%;
+    }
+    img.vol1 {
+        display: block;
+        width: 25%;
+        float: right;
+        padding: 3%;
+    }
+    img.vol2 {
+        display: block;
+        width: 30%;
+        float: left;
+        padding: 3%;
+    }
+    img.vol3 {
+        display: block;
+        width: 30%;
+        float: right;
+        padding: 3%;
+    }
+    .hg_reviews {
+        background-image: url(../images/BigTexture_bg.jpg);
+        margin-top: 3%;
+        padding: 3%;
+  
+    }
+    #wrapper section.hg_reviews h1 {
+        font-size: 1em;
+    }
+}
+/*LARGE SCREEN================
+=======================================*/
+@media screen and (min-width:816px) {
+    img.books_hgBooks {
+        width: 40%;
+        left: 8%;
+        top: 60%;
+    }
+}
+    
+/*JUNGLE PAGE ===========================================
+================================*/
+.jungle_book3d {
+     display: none;
+}
+
+
+img.jungle_header_small {
+    width: 70%;
+    position: absolute;
+    top: 92%;
+    left: 15%;
+    right: 0;
+    
+}
+.awards {
+        background-image: url(../images/TextureBg.jpg);
+        margin-top: 8%;
+        padding: 5%;     
+    }
+section.jungle_book {
+    margin-top: 50%;
+}
+.jungle_video {
+    margin-top: 40px;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+}
+.jungle_video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+    
+
+    
+/* JUNGLE PAGE =======MID-SIZE SCREEN==============
+===========================================*/
+@media screen and (min-width:650px){
+    header.jungle {
+        background-image: url(../images/jungle_header.jpg);
+        background-position: center 10px;
+    }
+    .jungle_header_small {
+        display: none;
+    }
+    .jungle_book3d {
+        display: block;
+        width: 50%;
+        position: absolute;
+        left: 8%;
+        top: 40%
+    }
+    section.jungle_book {
+        margin-top: 5%;
+        
+    }
+    .awards {
+        background-image: url(../images/BigTexture_bg.jpg);
+        margin-top: 0;
+        padding:0 0 3% 0;
+    }
+    #wrapper .awards p {
+        color: #58595B;
+    }
+    .jungle_video iframe {
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        margin: 0 0;
+    }
+    
+}
+
+/*JUNGLE PAGE    LARGE SCREEN=============================
+=====================================*/
+@media screen and (min-width:816px) {
+     .jungle_video iframe {
+        left: 15%;
+        width: 70%;
+        height: 70%;
+        margin: 0;
+    }
+    .jungle_video {
+    margin-top: 70px;
+    }
+    .awards {
+        margin-top: -10%;
+        padding:0 0 3% 0;
+    }
+
+
+
+}

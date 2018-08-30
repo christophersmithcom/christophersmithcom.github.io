@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400i|Raleway:200,800');
+
+/*
+FONTS
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+
+COLORS:
+gray: #58595B;
+gold: #FFE495;
+
+*/
+
+/*MOBILE SCREEN========
+======================================*/
+#wrapper {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4em;
+    box-sizing: border-box;
+    line-height: 1.4;
+    display: block;
+    
+}
+#wrapper h1 {
+    font-size: 1.4em;
+    font-weight: 800;
+    color: #58595B;
+    line-height: 1.24;
+    padding: 3% 5% 0;
+}
+#wrapper p {
+    padding: 3% 0 3% 5%;
+    font-size: .9em;
+    font-weight: 200;
+}
+
+/*HEADER=================
+=====================================*/
+
+header {
+    position: relative;
+    padding: 15px 0;
+    background-color: #000;
+    height: auto;
+}
+header .logo {
+    width: 60%;
+    max-width: 200px; 
+    margin: 5% 0 0 5%;
+}
+
+/* RESPONSIVE MENU ============
+===================================*/
+#btnMenu {
+    display:none;
+}
+header label {
+    width: 8%;
+    max-width: 30px;
+    position: absolute;
+    right: 5%;
+    top: 2%;
+}
+header label:hover {
+    cursor: pointer;
+}
+label.burger img {
+    width: 90%;
+}
+.burger {
+    width: 100%;    
+} 
+.topNav {
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    margin: -850px 0 0 0px;
+    transition-duration: 0.8s;
+    box-sizing: border-box;
+    position: absolute;
+    top: 200px;
+}
+.topNav ul {
+    display: block;
+}
+.topNav li {
+    border-top: 1px solid #444;
+    padding: 10px 0;
+}
+.topNav img {
+        padding: 0 0 7px 2px;
+    }
+.topNav li:hover {
+    background: rgba(0,0,0,0.6);
+}
+.topNav li a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    padding-left: 5%;
+}
+#btnMenu:checked ~ .topNav {
+    margin: 0;
+    top: 7%;
+}
+.topNav ul ul {
+    background: rgba(80,80,80,0.6);
+}
+.topNav ul ul a {
+    padding-left: 60px;
+}
+.topNav ul li.submenu ul {
+    display: none;
+    z-index: 200;
+}
+/*END RESPONSIVE MENU*/
+
+img.suzannePicture {
+    width: 100%;
+}
+.quote {
+    text-align: left;
+    padding: 25px 5% 10px 10%;
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    color: #fff;    
+}
+img.signature {
+    width: 60%;
+    padding-left: 32%;
+    margin-bottom: 70px;
+}
+
+img.hgBooks {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 92%;
+}
+#hungerGames {
+    margin-top: 40%;
+}
+img.booksCol {
+    width: 50%;
+    display: block;
+    margin: 10% auto;
+
+}
+.button {
+    padding: 7px;
+    margin-left: 37%;
+    background-color: #d5bd8f;
+    border-radius: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8em;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    list-style-type: none;
+}
+a.button {
+    text-decoration: none;
+    color: #000;
+}
+a.button:hover {
+    background-color: #dedede;
+    color: #000;
+}
+
+/*SECTIONS*/
+
+#jungle {
+    width: 100%;
+    padding: 20px 0;
+    background-image: url(../images/TextureBg.jpg);
+    background-position: center bottom;
+}
+img.jungleBook {
+    width: 70%;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 5% auto;
+    box-shadow: 5px 5px 5px grey;
+}
+img.jungleBook3d  {
+    display: none;
+}
+img.awards {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+#charlie {
+    width: 100%;
+    padding: 40px 0;
+    
+}
+#charlie img {
+    width: 75%;
+    display: block;
+    margin: 0 auto 5%;
+    box-shadow: 5px 5px 5px grey;
+}
+#charlie img.charlieBook3d {
+    display: none;
+}
+.btnCharlie, .btnGregor, .btnJungle{
+    display: block;
+    margin: 10px auto;
+}
+.btnCharlie {
+    margin-top: 20px;
+}
+#gregor {
+    background-image: url(../images/TextureBg.jpg);
+    background-repeat: repeat;
+    
+}
+#gregor h1 {
+    padding-top: 30px;
+}
+#gregor ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#gregor li {
+    padding: 20px;
+}
+
+/*FOOTER=====================
+======================================*/
+footer {
+    background-color: #000;
+    text-align: center;
+}
+footer h3{
+    color: #fff; 
+    font-size: .6em;
+    padding: 60px 30px 30px;
+}
+footer .socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 25% 50px;
+}
+footer img {
+    width: 80%;
+}
+footer .links li {
+    display: inline-block;
+    padding: 0 30px;
+    line-height: 1.2em;
+    
+}
+footer .links li:first-child {
+    border-right: solid 1px #d5bd8f;
+    
+}
+footer .links a {
+    text-decoration: none;
+    color: #d5bd8f;
+}
+
+
+/*MID-SIZE SCREEN==============
+===========================================*/
+@media screen and (min-width:650px){
+    
+    #wrapper {
+        width: 100%;
+    }
+    #wrapper h1 {
+        font-size: 1.2em;
+        font-weight: 800;
+        color: #58595B;
+        line-height: 1.24;
+        padding: 3% 5% 0;
+}
+    #wrapper p {
+        font-size: .8em;
+        font-weight: 200;
+}
+    header {
+        height: 520px;
+        background-color: #fff;
+        background-image: url(../images/SuzanneCollins_phot.jpg);
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        background-color: #000;     
+}
+    header .logo {
+        width: 25%;
+        margin: 1% 2% 1% 2%;
+}
+    .quote {
+        position: absolute;
+        top: 16%;
+        text-align: left;
+        padding: 0 50% 10px 10%;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.1em;
+        color: #fff;    
+} 
+
+/* NAV */
+    .topNav {
+        margin: 0;
+        background: transparent;
+        transition: none;
+        width: 75%;
+        right: 0;
+        top: 0;
+        text-align: right;
+    }
+    header label {
+        display: none;
+    }
+    .topNav li {
+        display: inline-block;
+        border: none;
+        padding: 1% 2% 0 0;
+        
+    }
+    .topNav li:hover {
+        background-color: transparent;
+    }
+    .topNav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: .8em;
+        padding: 0;
+    }
+    .topNav ul li a:hover {
+        color: #FFE495;
+    }
+    .topNav img {
+        width: 8px;
+        padding: 0 0 5px 2px;
+    }
+    .topNav ul li:hover ul {
+        background: rgba(0,0,0,0.8);
+        width: auto;
+        height: auto;
+        margin: 0px 0 0 0;
+        padding-left: 10px;
+        display: block;
+        position: absolute;
+        text-align: left;
+    }
+    .submenu a {  
+        padding: 3px 7px;
+    }
+/* END NAV*/
+    
+    
+    img.suzannePicture {
+        display: none;
+}
+    img.hgBooks {
+        width: 45%;
+        top: 62%;
+        right: 47%;
+    
+}
+    .button {
+        margin-left: 45%;
+    }
+    #hungerGames {
+        margin-top: 10px;
+    }
+    
+
+    #jungle {
+        background-image: url(../images/BigTexture_bg.jpg);
+        background-repeat: repeat;
+        background-position: bottom;
+    
+}
+    #hungerGames p {
+        width: 55%;
+    }
+    img.booksCol {
+        width: 30%;
+        margin: -40% 0 0 70%;
+}
+    img.jungleBook {
+        width: 60%;
+        display: block;
+        margin: 40px auto 20px;
+} 
+    img.awards {
+        width: 80%;
+        display: block;
+        margin: 20px auto;
+}
+    #charlie {
+        margin: 40px 0;
+        padding: 0;
+        background-color: #fff;
+}
+    #charlie .charlieBookFlat {
+        width: 60%;
+    }
+    #gregor .btnGregor {
+        margin: 30px auto 15px;
+    }
+    #gregor ul {
+        display: block;
+        text-align: center;       
+}
+    #gregor img {
+        width: 45%;
+}
+/*LARGE SCREEN================
+=======================================*/
+@media screen and (min-width:816px) {
+    #wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #wrapper p {
+        padding-top: 1%;
+    }
+    header {
+        height: 580px;
+    }
+    header .logo {
+        width: 20%;
+        margin: 1% 10% 0 5%;
+/*        float: left;*/
+    }
+    /*NAV*/
+    header label {
+        display: none;
+        cursor: pointer;
+    }
+    .topNav ul {
+        width: 95%;
+        list-style: none;
+        margin-right: 2%;
+        
+    }
+    .topNav ul ul {
+        display: none;
+    }
+    .topNav ul li {
+        display: inline-block;
+        padding: 10px ;
+        top: 110px;
+    }
+    .topNav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: .9em;
+        display: block;
+    }
+    .topNav ul li a:hover {
+        color: #FFE495;
+    }
+    .topNav img {
+        padding: 0 0 7px 5px;
+    }
+    .topNav ul li:hover ul {
+        background: rgba(0,0,0,0.8);
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding-left: 10px;
+        display: block;
+        position: absolute;
+    }
+    .submenu a {  
+        padding: 3px 7px;
+    }
+    /* end NAV */
+    
+    img.signature {
+        top: 35%;
+        float: left;
+    }
+    .quote {
+        top: 15%;
+        float: left;
+        font-size: 1.2em;
+    }
+    img.hgBooks {
+        width: 40%;
+        top: 58%;
+        float: left;
+    }
+    #hungerGames {
+        margin-top: 5%;
+    }
+    #hungerGames p {
+        width: 55%;
+    }
+    img.booksCol {
+        width: 22%;
+        margin-left: 70%;
+        margin-top: -35%;
+        padding: 0;
+    }
+    #charlie img, img.jungleBook {
+        display: none;
+    }
+    img.jungleBook3d {
+        display: block;
+        width: 35%;
+        margin-left: 7%;
+        margin-top: -7%;
+    }
+    #charlie {
+        margin: 0;
+        height: 320px;
+        background-image: url(../images/BigTexture_bg.jpg);
+        background-repeat: repeat;
+        background-position: top;
+    }
+    #charlie img.charlieBook3d {
+        display: block;
+        width: 40%;
+        margin-left: 55%;
+        box-shadow: none;
+        margin-top: 0px;
+    }
+    img.awards {
+        width: 40%;
+        display: block;
+        margin-top: 20px;
+        margin-left: 35%;
+    }
+    #gregor ul {
+        width: 85%;
+        display: block;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #gregor li img{
+        width: 110%;
+        padding: 40px 0;
+    }
+    #gregor {
+        background-image: url(../images/imageGregorBooks_bg.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        -webkit-background-size: 100%;
+        background-size: 100% ;
+    }
+    .btnGregor {
+        margin-right: 8%;
+    }
+    
+    section#hunterGames p {
+        width: 50%;
+    }
+    #jungle {
+        height: 350px;
+    }
+    #jungle {
+        margin-top: 90px;
+        padding: 10px 0 0 0;
+    }
+    #jungle p {
+        width: 51%;
+        margin-left: 35%;
+    }
+    #jungle h1 {
+        margin-left: 35%;
+        margin-top: -35%;
+    }
+    .btnJungle {
+        margin-right: 10%;
+        margin-top: -10%;
+    }
+    #charlie p {
+        width: 50%;
+    }
+    #charlie h1 {
+        margin-top: -45%;   
+    }
+  
+        
+
+    
+/*FOOTER*/
+     footer .socialMedia {
+         width: 50%;
+         justify-content: flex-start;
+         padding: 30px 0 0 70px;
+        
+    }
+    footer img {
+        width: 70%;
+    }
+    footer .socialMedia  li{
+        margin-right: 10px;
+        padding: 0;
+    }
+    footer .links {
+        font-size: .8em;
+        float: right;
+        margin-top: -50px;
+    }
+    footer h3 {
+        text-align: left;
+        padding: 10px 0 20px 70px
+    }
+}
+/*END LARGE SCREEN=============*/
+
+
+@media screen and (min-width:887px) {
+    header {
+        height: 630px;        
+    }
+      
+}
+@media screen and (min-width:933px) {
+    header {
+        height: 690px;
+    }
+    img.booksCol {
+        padding-top: 13%;
+    }
+  
+}
+
+    
+
+
+
+    
+
+

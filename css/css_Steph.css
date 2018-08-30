@@ -1,0 +1,176 @@
+/*FILM ADAPTATIONS PAGE=====================
+======================================*/
+#filmAdap p {
+    max-width: 960px;
+    margin: 0 auto;
+}
+#filmAdap .topDiv {
+    padding-top: 40%;
+}
+img.film_hgSmall {
+    width: 100%;
+}
+img.dvdbox {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 90%;
+}
+img.bg_filmAdap {
+    width: 100%;
+    margin-top: 55px;
+}
+.bgTrailer {
+    background: url(../images/BigTexture_bg.jpg) no-repeat;
+    width: 100%;
+}
+.bgTrailer2 {
+    background: url(../images/film_bgImage.jpg) no-repeat;
+    width: 100%;
+    margin: 0 auto; 
+}
+.filmTitle {
+    font-weight: bold;
+    color: #58595B;
+}  
+.trailer {
+    margin: 10px;
+	position:relative;
+	padding-bottom: 56.25%;
+	padding-top: 0;
+	height: 0;
+	overflow:hidden;
+}
+.trailer iframe {
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*CHARLIE BOOK PAGE*/
+    
+.slideshow {
+    margin: 4%;
+    }
+img.charlie_headerSmall {
+    width:100%;
+}
+.praise { 
+    background: url(../images/BigTexture_bg.jpg);
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.charlie_book p {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.praise {
+    padding: 20px 0 40px;
+}
+.praise p {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.reference {
+    font-style: italic;
+}
+
+/*MID-SIZE SCREEN==============
+===========================================*/
+@media screen and (min-width:650px){
+    
+    /* FILM PAGE*/
+    
+    img.film_hgSmall {
+        display: none;
+    }
+    .header_film {
+        height: 440px;
+        background-color: #fff;
+        background-image: url(../images/hg_filmAdap_large.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    .trailer iframe {
+        margin: 30px 0;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+    }
+    #filmAdap .topDiv {
+    padding-top: 10%;
+    }
+    img.dvdbox {
+        width: 25%;
+        top: 62%;
+        right: 60%;
+    } 
+    
+    /* CHARLIE BOOK PAGE*/
+    
+    img.charlie_headerSmall {
+        display: none;
+    }
+    .header_charlie {
+        height: 440px;
+        background-color: #fff;
+        background-image: url(../images/charlie_header_large.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+}
+/*LARGE SCREEN================
+=======================================*/
+@media screen and (min-width:816px) {
+    
+    /* FILM PAGE*/  
+    .trailer iframe {  
+            left:15%;
+            width:70%;
+            height:70%;
+    }
+    .header_film {
+        height: 480px;
+    }
+    /*CHARLIE BOOK PAGE*/
+    .header_charlie {
+        height: 480px;
+    }
+    .bx-wrapper {
+    width:700px;
+    margin: 0 auto 2em;
+    }
+    article .slider {
+    list-style-type: none;
+    text-align: center;
+    }
+    
+    
+    
+}
+/*END LARGE SCREEN=============*/
+
+@media screen and (min-width:887px) {
+    .header_film, .header_charlie {
+        height: 500px;
+    }
+    
+}
+@media screen and (min-width:933px) {
+    .header_film, .header_charlie {
+        height: 610px;
+    }    
+}
+@media screen and (min-width:1043px) {
+    .header_film, .header_charlie {
+        height: 650px;
+    }
+}
